@@ -42,7 +42,12 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
-
+	{
+		path: '/Appointment',
+		name: 'Quản lý Lịch hẹn',
+		icon: 'CalendarOutlined',
+		component: './Appointment',
+	},
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',

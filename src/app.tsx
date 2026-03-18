@@ -5,11 +5,11 @@ import 'moment/locale/vi';
 import type { RequestConfig, RunTimeLayoutConfig } from 'umi';
 import { getIntl, getLocale, history } from 'umi';
 import type { RequestOptionsInit, ResponseError } from 'umi-request';
-import ErrorBoundary from './components/ErrorBoundary';
+//import ErrorBoundary from './components/ErrorBoundary';
 // import LoadingPage from './components/Loading';
 import { OIDCBounder } from './components/OIDCBounder';
 import { unCheckPermissionPaths } from './components/OIDCBounder/constant';
-import OneSignalBounder from './components/OneSignalBounder';
+//import OneSignalBounder from './components/OneSignalBounder';
 import TechnicalSupportBounder from './components/TechnicalSupportBounder';
 import NotAccessible from './pages/exception/403';
 import NotFoundContent from './pages/exception/404';
@@ -113,16 +113,6 @@ export const layout: RunTimeLayoutConfig = ({ initialState }) => {
 			</a>
 		),
 
-		childrenRender: (dom) => (
-			<OIDCBounder>
-				<ErrorBoundary>
-					{/* <TechnicalSupportBounder> */}
-					<OneSignalBounder>{dom}</OneSignalBounder>
-					{/* </TechnicalSupportBounder> */}
-				</ErrorBoundary>
-			</OIDCBounder>
-		),
-		menuHeaderRender: undefined,
-		...initialState?.settings,
+		childrenRender: (dom) => dom,
 	};
 };
