@@ -48,6 +48,12 @@
 		icon: 'CalendarOutlined',
 		component: './Appointment',
 	},
+	{
+		path: '/vanbang',
+		name: 'Quản lý văn bằng',
+		icon: 'ProfileOutlined',
+		component: './vanBangTotNghiep/App1',
+	},
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',

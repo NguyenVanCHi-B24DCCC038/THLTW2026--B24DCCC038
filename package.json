@@ -37,7 +37,8 @@
     "serve": "umi-serve",
     "tsc": "tsc --noEmit",
     "prepare": "husky install",
-    "sentry:sourcemaps": ""
+    "sentry:sourcemaps": """start:backend": "node backend/server.js",
+    "dev:all": "concurrently \"npm run start\" \"npm run start:backend\""
   },
   "lint-staged": {
     "**/*.less": "stylelint --syntax less",
@@ -66,6 +67,8 @@
     "apexcharts": "^3.41.1",
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.6",
     "fs-extra": "^11.2.0",
     "js-file-download": "^0.4.12",
     "lodash": "^4.17.21",
