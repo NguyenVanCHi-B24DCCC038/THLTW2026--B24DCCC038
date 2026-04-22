@@ -48,6 +48,12 @@
 		icon: 'ShoppingCartOutlined',
 		component: './Order',
 	},
+	{
+		path: '/user/register',   // URL
+		name: 'Register',         // tên hiển thị menu
+		icon: 'UserOutlined',     // icon (antd)
+		component: './user/Register', // file component
+	},
 
 	// DANH MUC HE THONG
 	// {

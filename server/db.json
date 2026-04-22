@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Hello World",
+      "slug": "hello-world",
+      "content": "## Xin chào blog",
+      "thumbnail": "https://picsum.photos/300",
+      "tags": ["js"],
+      "status": "published",
+      "author": "Chi",
+      "createdAt": "2026-04-01",
+      "views": 10
+    }
+  ],
+  "tags": [
+    { "id": 1, "name": "js" }
+  ]
+}
