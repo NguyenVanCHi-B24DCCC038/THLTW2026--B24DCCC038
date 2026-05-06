@@ -43,16 +43,22 @@
 		component: './TodoList',
 	},
 	{
-		path: '/order',
-		name: 'Order',
-		icon: 'ShoppingCartOutlined',
-		component: './Order',
+		path: '/',
+		name: 'Dashboard',
+		icon: 'DashboardOutlined',
+		component: './Dashboard',
 	},
 	{
-		path: '/user/register',   // URL
-		name: 'Register',         // tên hiển thị menu
-		icon: 'UserOutlined',     // icon (antd)
-		component: './user/Register', // file component
+		path: '/kanban',
+		name: 'Kanban',
+		icon: 'AppstoreOutlined',
+		component: './Kanban',
+	},
+	{
+		path: '/tasks',
+		name: 'TaskList',
+		icon: 'OrderedListOutlined',
+		component: './TaskList',
 	},
 
 	// DANH MUC HE THONG
